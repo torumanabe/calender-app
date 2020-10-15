@@ -24,6 +24,9 @@ const CurrentScheduleDialog = ({
     <Dialog open={isDialogOpen} onClose={closeDialog} maxWidth="xs" fullWidth>
       <DialogActions>
         <div className={styles.closeButton}>
+        <IconButton onClick={deleteItem} size="small">
+            <DeleteOutlineOutlined />
+          </IconButton>
           <IconButton onClick={closeDialog} size="small">
             <Close />
           </IconButton>
